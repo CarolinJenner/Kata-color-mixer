@@ -1,0 +1,53 @@
+/******** general stylings *******/
+
+*,
+*:before,
+*:after  {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --clr-transp: rgba(255, 255, 255, 0.500);
+}
+
+
+html {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    height: 100%;
+    background-color:cadetblue;
+}  
+
+/******** specific stylings *******/
+
+.banner {
+    background-color: var(--clr-transp);
+    height: 5rem;
+}
+
+/******** utilities *******/
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: .5rem;
+}
+
+/***sizes***/
+.prg-t-2rem {
+    padding-top: 2rem;
+}
+
+.pdg-l-1-5rem {
+    padding-left: 1.5rem;
+}
+
+.pdg-r-1rem {
+    padding-right: 1rem;
+}
+
+.mrg-l-auto {
+    margin-left: auto;
+}
