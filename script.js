@@ -1,6 +1,7 @@
 const rangeRed = document.getElementById("range-red");
 const rangeGreen = document.getElementById("range-green");
 const rangeBlue = document.getElementById("range-blue");
+const polaroid = document.getElementById("polaroid");
 const background = document.getElementById("background");
 const valueDisplay = document.getElementById("value-display");
 const btnRandomClr = document.getElementById("random-clr");
@@ -10,7 +11,8 @@ function changeColor(hexCode) {
   let green = rangeGreen.value;
   let blue = rangeBlue.value;
 
-  background.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+  polaroid.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+  background.style.backgroundColor = `rgb(${red}, ${green}, ${blue}, 0.5)`;
 
   //valueDisplay.innerText = hexCode;
   valueDisplay.innerText = `rgb(${red}, ${green}, ${blue})`;

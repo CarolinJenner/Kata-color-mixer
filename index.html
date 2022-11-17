@@ -9,34 +9,54 @@
   </head>
 
   <body>
-    <main id="background">
-      <div class="banner flex prg-t-2rem pdg-l-1-5rem">
-        <input
-          id="range-red"
-          type="range"
-          step="1"
-          min="0"
-          max="255"
-          value="150"
-        />
-        <input
-          id="range-green"
-          type="range"
-          step="1"
-          min="0"
-          max="255"
-          value="150"
-        />
-        <input
-          id="range-blue"
-          type="range"
-          step="1"
-          min="0"
-          max="255"
-          value="150"
-        />
-        <p id="value-display" class="mrg-l-auto pdg-r-1rem"></p>
-        <button id="random-clr">random colour</button>
+    <main id="background" class="flex-c-c-c">
+      <div class="bdr-1rem-s-w-02">
+        <div id="polaroid" class="polaroid"></div>
+        <p id="value-display" class="mrg-l-auto bg-clr-white-02 pdg-t-05"></p>
+      </div>
+      <div class="banner flex pdg-l-1-5rem pdg-bl-1">
+        <div>
+          <section class="flex">
+            <label for="range-red">r</label>
+            <input
+              id="range-red"
+              type="range"
+              step="1"
+              min="0"
+              max="255"
+              value="150"
+            />
+          </section>
+          <section class="flex">
+            <label for="range-green">g</label>
+            <input
+              id="range-green"
+              type="range"
+              step="1"
+              min="0"
+              max="255"
+              value="150"
+            />
+          </section>
+          <section class="flex">
+            <label for="range-blue">b</label>
+            <input
+              id="range-blue"
+              type="range"
+              step="1"
+              min="0"
+              max="255"
+              value="150"
+            />
+          </section>
+        </div>
+
+        <button
+          id="random-clr"
+          class="mrg-r-1rem bg-gdnt-rainbow bdr-0 bdr-r-025 pdg-il-05 pdg-bl-07"
+        >
+          random colour
+        </button>
       </div>
     </main>
     <script src="script.js"></script>

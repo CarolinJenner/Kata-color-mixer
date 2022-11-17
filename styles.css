@@ -2,55 +2,128 @@
 
 *,
 *:before,
-*:after  {
-    box-sizing: border-box;
-    margin: 0;
+*:after {
+  box-sizing: border-box;
+  margin: 0;
 }
 
 :root {
-    --clr-transp: rgba(255, 255, 255, 0.500);
+  --clr-white-02: rgba(255, 252, 247, 0.9);
+  --clr-transp: rgba(255, 255, 255, 0.5);
+  --clr-red-01: rgb(255, 140, 134);
+  --clr-green-01: rgb(146, 255, 146);
+  --clr-blue-01: rgb(100, 203, 255);
 }
 
-
 html {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 16px;
-    font-weight: 100;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
 }
 
 /******** specific stylings *******/
 main {
-    height: 100vh;
-    background-color:rgb(150, 150, 150);
+  height: 100vh;
 }
 
 .banner {
-    background-color: var(--clr-transp);
-    height: 5rem;
+  background-color: var(--clr-transp);
+  _height: 5rem;
+  width: 49vw;
 }
 
+.polaroid {
+  padding-block: calc(3rem +10vw);
+  height: 50vw;
+  width: 45vw;
+}
+
+#range-red {
+  accent-color: var(--clr-red-01);
+}
+
+#range-green {
+  accent-color: var(--clr-green-01);
+}
+
+#range-blue {
+  accent-color: var(--clr-blue-01);
+  background-color: var(--clr-white-02);
+}
 /******** utilities *******/
 
-.flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: .5rem;
+/***bg-colours***/
+.bg-clr-white-02 {
+  background-color: var(--clr-white-02);
 }
 
-/***sizes***/
-.prg-t-2rem {
-    padding-top: 2rem;
+.bg-gdnt-rainbow {
+  background-image: linear-gradient(
+    90deg,
+    var(--clr-red-01),
+    rgb(255, 221, 158),
+    rgb(255, 255, 152),
+    var(--clr-green-01),
+    var(--clr-blue-01),
+    rgb(255, 177, 255)
+  );
+}
+
+/***border***/
+.bdr-0 {
+  border: none;
+}
+
+.bdr-1rem-s-w-02 {
+  border: 1rem solid var(--clr-white-02);
+}
+
+.bdr-r-025 {
+  border-radius: 0.25rem;
+}
+
+/***boxing***/
+.pdg-t-05 {
+  padding-top: 0.5rem;
+}
+
+.pdg-bl-07 {
+  padding-block: 0.7rem;
+}
+
+.pdg-bl-1 {
+  padding-block: 1rem;
+}
+
+.pdg-il-05 {
+  padding-inline: 0.5rem;
 }
 
 .pdg-l-1-5rem {
-    padding-left: 1.5rem;
+  padding-left: 1.5rem;
 }
 
-.pdg-r-1rem {
-    padding-right: 1rem;
+.mrg-r-1rem {
+  margin-right: 1rem;
 }
 
 .mrg-l-auto {
-    margin-left: auto;
+  margin-left: auto;
+}
+
+/***flex***/
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.flex-c-c-c {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
