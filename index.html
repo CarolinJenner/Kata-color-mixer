@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>color mixer</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <main id="background">
-        <div class="banner flex prg-t-2rem pdg-l-1-5rem">
-            <input id="range-red" type="range" step="1" min="0" max="255" value="150">
-            <input id="range-green" type="range" step="1" min="0" max="255" value="150">
-            <input id="range-blue" type="range" step="1" min="0" max="255" value="150">
-            <p id="value-display" class="mrg-l-auto pdg-r-1rem ">
-                rgb(150, 150, 150)
-            </p>
-        </div>
+      <div class="banner flex prg-t-2rem pdg-l-1-5rem">
+        <input
+          id="range-red"
+          type="range"
+          step="1"
+          min="0"
+          max="255"
+          value="150"
+        />
+        <input
+          id="range-green"
+          type="range"
+          step="1"
+          min="0"
+          max="255"
+          value="150"
+        />
+        <input
+          id="range-blue"
+          type="range"
+          step="1"
+          min="0"
+          max="255"
+          value="150"
+        />
+        <p id="value-display" class="mrg-l-auto pdg-r-1rem"></p>
+        <button id="random-clr">random colour</button>
+      </div>
     </main>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
